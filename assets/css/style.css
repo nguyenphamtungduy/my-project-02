@@ -396,3 +396,82 @@ a {
     background-color: var(--primary-color);
     color: #fff;
 }
+
+/* feedback */
+.feedback {
+    padding: 96px 0;
+    background: #2e2100;
+    overflow: hidden;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.feedback .info img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .feedback-item .title {
+    font-family: var(--font-heading);
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+}
+
+.feedback .feedback-item .desc {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    line-height: 1.68;
+    color: #bfbcb3;
+}
+
+.feedback .feedback-item .dots {
+    margin-top: 28px;
+}
+
+.feedback .feedback-item .dot {
+    margin-right: 6px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #634700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feedback .feedback-item .dot.active {
+    background: var(--primary-color);
+}
+
+.feedback .content {
+    display: flex;
+    width: 65%;
+    margin-left: auto;
+}
+
+.feedback .content img {
+    width: 30px;
+    height: 28px;
+}
+
+.feedback .content blockquote {
+    margin-top: 28px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+}
