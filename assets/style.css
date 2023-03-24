@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffb900;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    min-width: 118px;
+    padding: 12px 12px;
+    background: #171100;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+/* header */
+.header {
+    background: #fffcf4;
+    padding-top: 28px;
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
+.header .body {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.header .nav a {
+    position: relative;
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.header .nav li.active a,
+.header .nav a:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.header .nav li.active a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 21px;
+    bottom: 6px;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.action-btn {
+    margin-left: 49px;
+    min-width: 144px;
+}
+
+/* hero */
+.hero {
+    background: #fffcf4;
+    padding: 56px 0 65px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-bock {
+    width: 49%;
+    display: flex;
+    position: relative;
+}
+
+.hero .media-bock .img-block {
+    width: 470px;
+    height: 695px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero .media-bock .hero-summary {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    background-color: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-summary .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff9e8;
+}
+
+.hero-summary .item:nth-child(2) .icon {
+    background: #fcefff;
+}
+
+.hero-summary .item:nth-child(3) .icon {
+    background: #ebeaff;
+}
+
+.hero-summary .info {
+    margin-left: 16px;
+}
+
+.hero-summary .item {
+    margin-top: 14px;
+}
+
+.hero-summary .item:first-child {
+    margin-top: 0;
+}
+
+.hero-summary .desc {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.hero-summary .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.hero .info-block {
+    width: 51%;
+    padding-left: 130px;
+}
+
+.info-block .heading {
+    margin-top: 64px;
+    width: 470px;
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.info-block .desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.info-block .cta-group {
+    margin: 38px 0 48px;
+    display: flex;
+    align-items: center;
+}
+
+.info-block .cta-group .btn-cta {
+    min-width: 180px;
+    height: 64px;
+    background-color: var(--primary-color);
+}
+
+.hero .cta-group button {
+    margin-left: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero button .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 50%;
+}
+
+.hero button span {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.hero .stats {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .stats strong {
+    padding: 0 8px 0 28px;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
+
+.hero .stats strong:first-child {
+    padding-left: 0;
+}
