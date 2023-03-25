@@ -29,18 +29,21 @@ a {
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     height: 50px;
     min-width: 118px;
-    padding: 12px 12px;
+    padding: 0 16px;
     background: #171100;
     border-radius: 999px;
     font-weight: 600;
     font-size: 1.6rem;
-    line-height: 1.75;
+    line-height: 50px;
+    text-align: center;
     color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .text {
@@ -219,6 +222,7 @@ a {
     min-width: 180px;
     height: 64px;
     background-color: var(--primary-color);
+    line-height: 64px;
 }
 
 .hero .cta-group button {
@@ -474,4 +478,77 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+
+/* feature 1 */
+.feature {
+    padding-top: 200px;
+}
+
+.feature .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .img {
+    display: flex;
+    gap: 30px;
+}
+
+.feature .img img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .img .lower {
+    margin-top: 34px;
+}
+
+.feature .content {
+    width: 41%;
+}
+
+.feature .content .title {
+    font-family: var(--font-heading), sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.feature .content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.feature .content .btn-cta {
+    margin-top: 32px;
+    min-width: 137px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* feature 2 */
+.feature-2nd {
+    padding-bottom: 200px;
+}
+
+.feature-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.feature-2nd .content {
+    width: 49%;
+    margin-top: 71px;
+}
+
+.feature-2nd .img img {
+    width: 470px;
+    height: 440px;
+    margin-top: 0;
 }
