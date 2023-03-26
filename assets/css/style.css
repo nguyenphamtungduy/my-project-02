@@ -552,3 +552,124 @@ a {
     height: 440px;
     margin-top: 0;
 }
+
+/* blog */
+.blog {
+    padding: 96px 0;
+}
+
+.blog .heading {
+    font-family: var(--font-heading), sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #130606;
+}
+
+.blog .desc {
+    margin: 0 auto;
+    width: 38%;
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #696262;
+}
+
+.blog .blog-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.blog .blog-item {
+    width: 33.33%;
+    border-radius: 16px;
+}
+
+.blog .blog-item:hover {
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.blog .blog-item img {
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog .info {
+    margin: 20px 20px 28px;
+}
+
+.blog .info .date {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 12px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.blog .info .date::before {
+    content: "";
+    display: inline-block;
+    margin-right: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffb900;
+}
+
+.blog .info .date::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: calc(100% + 27px);
+    background: #e2dfda;
+    border-radius: 0.5px;
+    left: 0;
+    bottom: 0;
+}
+
+.blog .info .title {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;
+}
+
+.blog .info .btn {
+    margin-top: 24px;
+    font-size: 1.4rem;
+}
+
+.blog .info .btn:hover {
+    background: var(--primary-color);
+}
+
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+}
+
+.blog .dot.active {
+    background: var(--primary-color);
+}
