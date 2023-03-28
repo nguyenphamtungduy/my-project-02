@@ -673,3 +673,74 @@ a {
 .blog .dot.active {
     background: var(--primary-color);
 }
+
+/* footer */
+.footer {
+    padding: 96px 0 28px;
+    background: #2e2100;
+}
+
+.footer .row {
+    display: flex;
+    border-bottom: 1px solid #59554b;
+    padding-bottom: 26px;
+}
+
+.footer .row .column {
+    width: 21%;
+}
+
+.footer .row .column:first-child {
+    width: 355px;
+}
+
+.footer .row .desc {
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+    width: 267px;
+}
+
+.footer .row .socials {
+    margin-top: 18px;
+}
+
+.footer .row .socials img {
+    margin-right: 18px;
+}
+
+.footer .column .title {
+    padding: 0 48px 14px 0;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .list {
+    margin-top: 28px;
+}
+
+.footer .column .label a {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .column strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer .copyright {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #807d74;
+    margin-top: 28px;
+}
